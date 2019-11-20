@@ -15,24 +15,24 @@
 <div class="wrapper fadeInDown">
   <div id="formContent">
     <!-- les titres des tabs -->
-​
+
     <!-- bonbon picture -->
     <div class="fadeIn first">
     <h1><img src="https://www.zupimages.net/up/19/46/let7.png" width="24" height="24">
       Your personal account
     </div>
-​
+
     <!-- formulaire de login -->
     <form method="get" id="compte">
-​
+
       <input type="email" id="login" class="fadeIn second" name="login" placeholder="login" required>
-​
+
       <input type="password" id="password" class="fadeIn third" name="login" placeholder="password" required>
-​
-      <input type="submit" class="fadeIn fourth" value="Log In">
-​
+
+      <a href="https://johnrice0174.github.io/candyshop.hcktn1/"><input type="submit" class="fadeIn fourth" value="Log In"></a>
+
     </form>
-​
+
     <!-- Je sais plus le passe de mot -->
     <div id="formFooter">
       <a class="underlineHover" href="https://johnrice0174.github.io/register.cs.hcktn1/" >Hey, new around here? Sign Up!</a>
@@ -41,36 +41,37 @@
       
       
     </div>
-​
+
   </div>
 </div>
+
 <script type="text/javascript">
-//vérifier si le formulaire OPPPPPP, stp!!!!
+  //vérifier si le formulaire OPPPPPP, stp!!!!
 let stateCheck = setInterval(() => {
     if(document.readyState ==='complete'){
         pageInit();
         clearInterval(stateCheck);
     }
 }, 100);
-​
+
 //t'ajoute un petit listener sur le tout
  function pageInit(){
   document.querySelector('#compte').addEventListener('submit', validationDuFormulaire);
  }
-​
+
 function validationDuFormulaire(evenement1){
     //faire en sorte que l'envoi du formu se fasse normalement
     evenement1.preventDefault();
-​
+
     //effacer les précédents messages de validations s'il y en a
     document.querySelectorAll('.msg').forEach((msg) => {
         msg.parentNode.removeChild(msg);
     });
-​
+
     let validation_de_ceci = true;
-​
+
     let les_champs = document.querySelectorAll('input[required], select[required], input[maxlength]');
-​
+
    //les petites boubles autour des champs pour les valider
     les_champs.forEach((champignon) => {
         if(champignon.checkValidity()){
@@ -83,7 +84,7 @@ function validationDuFormulaire(evenement1){
             //on ajoute la classe invalid si le champ est valide
             champignon.className = 'invalid';
             //Encore ne pas hésiter à faire des: console.log(champignon.validity);
-​
+
             //on donne un message par défaut ou un titre si ya rien
             let message = champignon.title ? champignon.title : champignon.validationMessage;
             //ajouter un validation message dans le Dom
@@ -100,6 +101,3 @@ function validationDuFormulaire(evenement1){
 
 </body>
 </html>
-
-
-
