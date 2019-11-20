@@ -1,15 +1,21 @@
-​
 /* BASIC */
-​
+
+h1 {
+  color: #56baed;
+}
 
 body {
-  background: url(https://www.wycombeheightsgc.co.uk/wp-content/uploads/2018/09/christening-96703071-1600x440.jpg) no-repeat center fixed; 
-  background-size: cover;
+    background: url(https://www.wycombeheightsgc.co.uk/wp-content/uploads/2018/09/christening-96703071-1600x440.jpg); 
+  background-size: 1000px;
   font-family: "Poppins", sans-serif;
   height: 100vh;
 }
-h1 {
-  color: #56baed;
+
+a {
+  color: #92badd;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 h2 {
